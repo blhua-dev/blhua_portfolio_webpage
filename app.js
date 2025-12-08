@@ -1,3 +1,4 @@
+//sidebar navigation//
 const toggleButton = document.getElementById('toggle-btn')
 const sidebar = document.getElementById('sidebar')
 
@@ -26,4 +27,17 @@ function closeAllSubMenus(){
   Array.from(sidebar.getElementsByClassName('show')).forEach(ul => {
     ul.previousElementSibling.classList.remove('rotate')
   })
+}
+
+//Creating VideoPlayer Gallery//
+
+document.querySelectorAll('.video-container video').forEach(vid => {
+    vid.onclick = () =>{
+        document.querySelector('.popup-video').style.display = 'block'
+        document.querySelector('.popup-video video').src = vid.getAttribute('src');
+    }
+    });
+document.querySelector('.popup-video span').onclick = () =>{
+    document.querySelector('.popup-video').style.display = 'none'
+    document.querySelector('.popup-video video').audioElement.pause();
 }
