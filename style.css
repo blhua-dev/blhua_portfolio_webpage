@@ -8,6 +8,7 @@
     --text-clr: #e7e7e7;
     --accent-clr: #15ec9a;
     --secondary-text-clr: #777;
+    --third-text-clr:#5627c5;
 
     /* ====== Transition ======*/
 }
@@ -55,7 +56,21 @@ main h1{
     
     h2, p{margin-top: 1em;}
 }
+.footer{
+    position: static;
+    bottom: 0;
+    color: var(--secondary-text-clr);
+    width: 100%;
+    text-align: center;
+}
+.footer .social_icons{
+    display: flex;
+    justify-content: center;
 
+}
+.footer .social_icons .footer_links{
+    margin-left: 20px;
+}
       /* ====== VideoGallery ====== */
 .video-gallery .video-container{
     display: flex;
@@ -114,7 +129,18 @@ main h1{
     width: 85%;
     height: 965px;
 }
+#crop_briankfc{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+}
+#email{
+    text-decoration:none;
+    color: var(--third-text-clr);
+    font-size: 20px;
+    font-weight: bolder;
 
+}
        /* ====== stylingNaviagationBar ====== */
 #sidebar{
     box-sizing: border-box;
