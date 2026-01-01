@@ -69,7 +69,7 @@ main h1{
 
 }
 .footer .social_icons .footer_links{
-    margin-left: 20px;
+    margin-left: 10px;
 }
       /* ====== VideoGallery ====== */
 .video-gallery .video-container{
@@ -243,8 +243,10 @@ main h1{
     background-color: var(--hover-clr);
 }
 
-
-
+        /* ====== miscNavigation ====== */
+.icon_blh{
+    width: 50%;
+}
 
 
         /* ====== creatingPhoneFormat ====== */
